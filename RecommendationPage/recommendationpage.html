@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rekomen.css">
+    <title>Recommendation Page</title>
+</head>
+
+<body>
+    <nav class="Navbar1">
+        <ul>
+            <li href="#"><a href="../Homepage/index.html">Homepage</a></li>
+            <li href="#"><a href="../AboutUs/aboutus.html">AboutUs</a></li>
+            <li href="#"><a href="../faqs/faqs.html">FAQ's</a></li>
+            <li href="#"><a href="../CarsPage/carspage.html">Cars</a></li>
+            <li href="#"><a href="../TransactionPage/transactionpage.html">My Transaction</a></li>
+            <li href="#" class="active"><a href="../MyAccountPage/MyAccountPage_Login.html">My Account</a></li>
+            <li><img src="../Assets/VentureLogo-1.png" alt="logo_gambar"></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="penilaian">
+            <div class="filters">
+                <h3 class="judul-sort">Filters</h3>
+                <div
+                    style="display: flex; flex-direction: row; justify-content: space-between; padding-left: 1em; padding-right: 1em;">
+                    <p>Sort By</p>
+                    <p>RESET</p>
+                </div>
+                <div class="rating">
+                    <!-- small -->
+                    <div class="smaller">
+                        <img src="../Assets/u_car-sideview.png" alt="car">
+                        <p>Relevance</p>
+                    </div>
+                    <div class="smaller">
+                        <img src="../Assets/u_trophy.png" alt="trophy">
+                        <p>Best Rating</p>
+                    </div>
+                    <div class="smaller">
+                        <img src="../Assets/linear/medal-star.png" alt="car">
+                        <p>Popularity</p>
+                    </div>
+                    <div class="smaller">
+                        <img src="../Assets/u_location-pin-alt.png" alt="car">
+                        <p>Distance</p>
+                    </div>
+                    <!-- big -->
+                    <div class="bigger">
+                        <section>
+                            <h3>Rp</h3>
+                            <img src="../Assets/fi-trending-up.png" alt="trending">
+                        </section>
+                        <p>Price Low to High</p>
+                    </div>
+                    <div class="bigger">
+                        <section>
+                            <h3>Rp</h3>
+                            <img src="../Assets/fi-trending-down.png" alt="trending">
+                        </section>
+                        <p>Price High to Low</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Ratings">
+                <h3 class="judul-sort">Ratings</h3>
+                <div class="rating">
+                    <!-- smaller -->
+                    <div class="more-smaller" style="height: 2em;">
+                        <img src="../Assets/fi-star.png" alt="star">
+                        <p>1+</p>
+                    </div>
+                    <div class="more-smaller" style="height: 2em;">
+                        <img src="../Assets/fi-star.png" alt="star">
+                        <p>2+</p>
+                    </div>
+                    <div class="more-smaller" style="height: 2em;">
+                        <img src="../Assets/fi-star.png" alt="star">
+                        <p>3+</p>
+                    </div>
+                    <div class="more-smaller" style="height: 2em;">
+                        <img src="../Assets/fi-star.png" alt="star">
+                        <p>4+</p>
+                    </div>
+                    <!-- bigger -->
+                    <div class="bigger">
+                        <section>
+                            <img src="../Assets/fi-star.png" alt="star" style="max-height: 1em;">
+                            <img src="../Assets/fi-trending-up.png" alt="trending">
+                        </section>
+                        <p>Price Low to High</p>
+                    </div>
+                    <div class="bigger">
+                        <section>
+                            <img src="../Assets/fi-star.png" alt="star" style="max-height: 1em;">
+                            <img src="../Assets/fi-trending-down.png" alt="trending">
+                        </section>
+                        <p>Price High to Low</p>
+                    </div>
+                </div>
+            </div>
+            <div class="transmission">
+                <h3 class="judul-sort">Transmission</h3>
+                <div class="rating" style="justify-content: start; gap: 0.5em;">
+                    <div class="smaller" style="height: 3em;">
+                        <img src="../Assets/Manual Transmission Logo-1.png" alt="manual">
+                        <p>Manual</p>
+                    </div>
+                    <div class="smaller" style="height: 3em;">
+                        <img src="../Assets/Manual Transmission Logo.png" alt="manual" style="max-width: 1em;">
+                        <p>Matic</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cartype">
+                <h3 class="judul-sort">Car Type</h3>
+                <div class="rating">
+                    <div class="smaller">
+                        <img src="../Assets/Micro Car.png" alt="manual">
+                        <p>Microcar</p>
+                    </div>
+                    <div class=" smaller">
+                        <img src="../Assets/hatchbackicon.png" alt="manual">
+                        <p>Hatchback</p>
+                    </div>
+                    <div class="smaller">
+                        <img src="../Assets/sedanicon.png" alt="manual">
+                        <p>Sedan</p>
+                    </div>
+                    <div class="smaller">
+                        <img src="../Assets/suvicon.png" alt="manual">
+                        <p>SUV</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="judul-sort">Fuel Type</h3>
+                <div class="rating" style="justify-content: start; gap: 0.5em;">
+                    <div class="smaller">
+                        <img src="../Assets/electric.png" alt="manual">
+                        <p>Electric</p>
+                    </div>
+                    <div class="smaller">
+                        <img src="../Assets/petrol.png" alt="manual">
+                        <p>Petrol</p>
+                    </div>
+                    <div class="smaller">
+                        <img src="../Assets/Diesel.png" alt="manual">
+                        <p>Diesel</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="mobil">
+            <div class="input-form">
+                <form action="">
+                    <select name="location">
+                        <option value="indonesia">Indonesia</option>
+                        <option value="malaysia">Malaysia</option>
+                        <option value="singapura">Singapura</option>
+                    </select>
+                    <input type="date" name="rent-date">
+                    <input type="date" name="return-date">
+                </form>
+                <button>Apply</button>
+            </div>
+            <div class="cardmobil">
+                <div class="card">
+                    <img src="../Assets/balino.png" alt="test">
+                    <div class="desc-card">
+                        <h3>Suzuki Baleno (2023)</h3>
+                        <p class="ket">B 3825 LK | Matic | 7 Seats | Petrol </p>
+                        <ul>
+                            <li><img src="../Assets/u_location-pin-alt.png" alt="loc">
+                                <p>10.0 km Away</p>
+                            </li>
+                            <li><img src="../Assets/fi-star.png" alt="star">
+                                <p>4.7 (12 Trips Done)</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price-card">
+                        <h2>Rp 25000/Hour</h2>
+                        <div class="information">
+                            <img src="../Assets/Information Icon.png" alt="info">
+                            <p>All services included</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="../Assets/apv.png" alt="test">
+                    <div class="desc-card">
+                        <h3>Suzuki APV (2016)</h3>
+                        <p class="ket">N 3344 DK | Manual | 7 Seats | Petrol</p>
+                        <ul>
+                            <li><img src="../Assets/u_location-pin-alt.png" alt="loc">
+                                <p>2.1 km Away</p>
+                            </li>
+                            <li><img src="../Assets/fi-star.png" alt="star">
+                                <p>4.8 (10 Trips Done)</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price-card">
+                        <h2>Rp 55000/Hour</h2>
+                        <div class="information">
+                            <img src="../Assets/Information Icon.png" alt="info">
+                            <p>All services included</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="../Assets/jazz.png" alt="test">
+                    <div class="desc-card">
+                        <h3>Honda Jazz (2020)</h3>
+                        <p class="ket">N 1173 | Auto | 4 Seats | Petrol</p>
+                        <ul>
+                            <li><img src="../Assets/u_location-pin-alt.png" alt="loc">
+                                <p>2.1 km Away</p>
+                            </li>
+                            <li><img src="../Assets/fi-star.png" alt="star">
+                                <p>4.3 (10 Trips Done)</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price-card">
+                        <h2>Rp 45000/Hour</h2>
+                        <div class="information">
+                            <img src="../Assets/Information Icon.png" alt="info">
+                            <p>All services included</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="../Assets/rubicon.png" alt="test">
+                    <div class="desc-card">
+                        <h3>Rubicon Jeep (2023)</h3>
+                        <p class="ket">N 2515 K | Auto & Manual | 4 Seats | Petrol</p>
+                        <ul>
+                            <li><img src="../Assets/u_location-pin-alt.png" alt="loc">
+                                <p>2.3 km Away</p>
+                            </li>
+                            <li><img src="../Assets/fi-star.png" alt="star">
+                                <p>4.9 (11 Trips Done)</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price-card">
+                        <h2>Rp 150000/Hour</h2>
+                        <div class="information">
+                            <img src="../Assets/Information Icon.png" alt="info">
+                            <p>All services included</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="card">
+                    <img src="../Assets/pajero.png" alt="test">
+                    <div class="desc-card">
+                        <h3>Rubicon Jeep (2023)</h3>
+                        <p class="ket">N 2515 K | Auto & Manual | 4 Seats | Petrol</p>
+                        <ul>
+                            <li><img src="../Assets/u_location-pin-alt.png" alt="loc">
+                                <p>2.3 km Away</p>
+                            </li>
+                            <li><img src="../Assets/fi-star.png" alt="star">
+                                <p>4.9 (11 Trips Done)</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price-card">
+                        <h2>Rp 150000/Hour</h2>
+                        <div class="information">
+                            <img src="../Assets/Information Icon.png" alt="info">
+                            <p>All services included</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/innova.png" alt="test">
+                    <div class="desc-card">
+                        <h3>Rubicon Jeep (2023)</h3>
+                        <p class="ket">N 2515 K | Auto & Manual | 4 Seats | Petrol</p>
+                        <ul>
+                            <li><img src="../Assets/u_location-pin-alt.png" alt="loc">
+                                <p>2.3 km Away</p>
+                            </li>
+                            <li><img src="../Assets/fi-star.png" alt="star">
+                                <p>4.9 (11 Trips Done)</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price-card">
+                        <h2>Rp 150000/Hour</h2>
+                        <div class="information">
+                            <img src="../Assets/Information Icon.png" alt="info">
+                            <p>All services included</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/avanza.png" alt="test">
+                    <div class="desc-card">
+                        <h3>Rubicon Jeep (2023)</h3>
+                        <p class="ket">N 2515 K | Auto & Manual | 4 Seats | Petrol</p>
+                        <ul>
+                            <li><img src="../Assets/u_location-pin-alt.png" alt="loc">
+                                <p>2.3 km Away</p>
+                            </li>
+                            <li><img src="../Assets/fi-star.png" alt="star">
+                                <p>4.9 (11 Trips Done)</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price-card">
+                        <h2>Rp 150000/Hour</h2>
+                        <div class="information">
+                            <img src="../Assets/Information Icon.png" alt="info">
+                            <p>All services included</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/civic.png" alt="test">
+                    <div class="desc-card">
+                        <h3>Rubicon Jeep (2023)</h3>
+                        <p class="ket">N 2515 K | Auto & Manual | 4 Seats | Petrol</p>
+                        <ul>
+                            <li><img src="../Assets/u_location-pin-alt.png" alt="loc">
+                                <p>2.3 km Away</p>
+                            </li>
+                            <li><img src="../Assets/fi-star.png" alt="star">
+                                <p>4.9 (11 Trips Done)</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price-card">
+                        <h2>Rp 150000/Hour</h2>
+                        <div class="information">
+                            <img src="../Assets/Information Icon.png" alt="info">
+                            <p>All services included</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="column-1">
+                <h3>Venture Car Renting Service</h3>
+                <div class="column-11">
+                    <ul>
+                        <li>
+                            <a href="#">Homepage</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ's</a>
+                        </li>
+                    </ul>
+                    <div class="line"></div>
+                    <ul>
+                        <li>
+                            <a href="#">Cars</a>
+                        </li>
+                        <li>
+                            <a href="#">My Transaction</a>
+                        </li>
+                        <li>
+                            <a href="#">My Account</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column-2">
+                <h3>Help & Support</h3>
+                <ul>
+                    <li>
+                        <a href="#">Contact Information</a>
+                    </li>
+                    <li>
+                        <a href="#">Submit a complaint</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms & Agreement</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ's List</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="column-3">
+                <div class="sect-1">
+                    <h3>Official Partnership With:</h3>
+                    <div>
+                        <img src="../Assets/Allianz_Logo.png" alt="allianz">
+                        <img src="../Assets/BOS Logo.png" alt="boslogo">
+                    </div>
+                </div>
+                <div class="sect-2">
+                    <h3>Check On Us Out!</h3>
+                    <ul>
+                        <li>
+                            <img src="../Assets/u_instagram-alt.png" alt="instagram">
+                        </li>
+                        <li>
+                            <img src="../Assets/u_facebook.png" alt="facebook">
+                        </li>
+                        <li>
+                            <img src="../Assets/u_twitter.png" alt="twitter">
+                        </li>
+                        <li>
+                            <img src="../Assets/u_whatsapp-alt.png" alt="whatsapp">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column-4">
+                <div>
+                    <img src="../Assets/venture.png" alt="logo">
+                </div>
+                <div class="sect-5">
+                    <h3>Venture Car Renting Service</h3>
+                    <p>Equity Tower, Floor 19A, Sudirman Central Busines District Lot 9 JRT.5, Jl. Jenderal Sudirman
+                        No.Kav.52-53, RT.5/RW.3, Senayan, Kec. Kby. Baru, Kota Jakarta Pusat, Daerah Khusus Ibukota
+                        Jakarta 12190.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let cards = document.getElementsByClassName("card");
+
+        function checkoutMobil() {
+            // Loop through all elements with class "card" and attach the click event
+            for (let i = 0; i < cards.length; i++) {
+                cards[i].addEventListener("click", function () {
+                    // Redirect to the checkout.html page when a card is clicked
+                    window.location.href = "../CarsPreviewPage/carspreviewpage.html";
+                });
+            }
+        }
+        checkoutMobil();
+    </script>
+
+
+
+</body>
+
+</html>

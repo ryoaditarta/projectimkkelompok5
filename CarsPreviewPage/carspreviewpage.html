@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CarCheckoutPage/checkout.css">
+    <link rel="stylesheet" href="./carspreviewpage.css">
+    <script defer src="script.js"></script>
+    <title>CarsPreview </title>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li href="#" class="back-arrow"><a href="../RecommendationPage/recommendationpage.html">&larr;</a></li>
+            <li href="#"><a href="../Homepage/index.html">Homepage</a></li>
+            <li href="#"><a href="../AboutUs/aboutus.html">AboutUs</a></li>
+            <li href="#"><a href="../faqs/faqs.html">FAQ's</a></li>
+            <li href="#"><a href="../CarsPage/carspage.html">Cars</a></li>
+            <li href="#"><a href="../TransactionPage/transactionpage.html">My Transaction</a></li>
+            <li href="#"><a href="../myaccountpage/MyAccountPage/MyAccountPage_Login.html">My Account</a></li>
+            <li><img src="../Assets/venture.png" alt="logo_gambar"></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="car-preview">
+            <section class="container" style="width: 100%; background-color: white; margin: 0em;">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="slide-1" src="../Assets/balino.png" alt="">
+                        <img id="slide-2" src="../Assets/balino.png" alt="">
+                        <img id="slide-3" src="../Assets/balino.png" alt="">
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slide-1"></a>
+                        <a href="#slide-2"></a>
+                        <a href="#slide-3"></a>
+                    </div>
+                </div>
+            </section>
+            <div class="cardesc">
+                <h1>Suzuki Baleno (2023)</h1>
+                <p>B 1079 TZZ | Automatic Transmission | 4 Seats | Petrol Fuel </p>
+                <ul>
+                    <li>2.1 KM Away</li>
+                    <li>4.7 (Trips Done)</li>
+                    <li>213.476 KMs Driven </li>
+                </ul>
+                <h1>Rp57,500/ Hour</h1>
+            </div>
+            <div class="garis"></div>
+            <div class="edityourrenting" style="display: flex; flex-direction: column; gap: 2em;">
+                <h1>Edit Your Renting Duration</h1>
+                <div class="input-form" style="justify-content: start; width: 90%;">
+                    <form action="" style="width: 100%;">
+                        <select name="location" style="width: 30%; height: 4em;">
+                            <option value="indonesia">Indonesia</option>
+                            <option value="malaysia">Malaysia</option>
+                            <option value="singapura">Singapura</option>
+                        </select>
+                        <input type="date" name="rent-date" style="width: 30%;">
+                        <input type="date" name="return-date" style="width: 30%;">
+                    </form>
+                    <button style="width: 20em;">Apply</button>
+                </div>
+            </div>
+            <div class=" carlocation">
+                <h1>Car Location</h1>
+                <img src="../Assets/maps.png" alt="maps" onclick="openmap()">
+                <div class="mappopup" id="mappopupid">
+                    <a
+                        href="https://www.google.co.id/maps/place/Jl.+Bunga+Kumis+Kucing,+Jatimulyo,+Kec.+Lowokwaru,+Kota+Malang,+Jawa+Timur+65141/@-7.95165,112.6208533,21z/data=!4m6!3m5!1s0x2dd629d81c419519:0xeccdb19f2b0b5fc3!8m2!3d-7.9516283!4d112.6209242!16s%2Fg%2F11j3tj_680?entry=ttu"><img
+                            src="./Assets/GMapsButton.svg"></a>
+                    <img class="shrinkbut" id="closemap" src="./Assets/ShrinkButton.svg" onclick="closemap()">
+                </div>
+                <div id="overlaymap"></div>
+            </div>
+            <div class="aboutthecar">
+                <h1>About The Car</h1>
+                <div class="contains" style="gap: 0em; height: 28em;">
+                    <div class="container-feature">
+                        <h2>Featuring</h2>
+                        <div class="fiturdanpenjelasan">
+                            <div class="daftar-fitur">
+                                <div>
+                                    <img src="../Assets/powersteering.svg" alt="">
+                                    <p>Power Steering</p>
+                                </div>
+                                <div>
+                                    <img src="../Assets/usb.svg" alt="">
+                                    <p>USB</p>
+                                </div>
+                                <div>
+                                    <img src="../Assets/MusicSystems.svg" alt="">
+                                    <p>Music Systems</p>
+                                </div>
+                                <div>
+                                    <img src="../Assets/fullbootspace.svg" alt="">
+                                    <p>Full Boot Space</p>
+                                </div>
+                                <div>
+                                    <img src="../Assets/AirConditioner.svg" alt="">
+                                    <p>Air Conditioner</p>
+                                </div>
+                                <div>
+                                    <img src="../Assets/reversecamera.svg" alt="">
+                                    <p>Reverse Camera</p>
+                                </div>
+                                <div>
+                                    <img src="../Assets/GPS.svg" alt="">
+                                    <p>GPS</p>
+                                </div>
+                                <div>
+                                    <img src="../Assets/airbags.svg" alt="">
+                                    <p>Airbags</p>
+                                </div>
+                                <div>
+                                    <img src="../Assets/toolkit.png" alt="">
+                                    <p>Toolkit</p>
+                                </div>
+                                <div>
+                                    <img src="../Assets/antilockbreaking.svg" alt="">
+                                    <p>Anti-lock Breaking</p>
+                                </div>
+                                <div>
+                                    <img src="../Assets/sparetire.svg" alt="">
+                                    <p>Spare Tire</p>
+                                </div>
+                                <div>
+                                    <img src="../Assets/bluetooth.svg" alt="">
+                                    <p>Bluetooth</p>
+                                </div>
+                            </div>
+                            <div class="penjelasan">
+                                <p>This car is packed with a great music system for an enjoyable ride. Its powerful 2133
+                                    cc engine ensures a smooth drive.</p>
+                                <p>Plus, you'll always find it sparkling clean and ready to roll, making each journey a
+                                    delight.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ratingreviews" style="margin: 2em;">
+                <h2>Rating & Reviews</h2>
+                <div class="ratingdanreviewscontainer">
+                    <div class="carratings">
+                        <h4>Car Ratings</h4>
+                        <div class="overalratings">
+                            <div class="ratastars">
+                                <img src="../Assets/starblue.svg" alt="starblue">
+                                <section class="overalratingandreview">
+                                    <h1>4.8 Overal Ratings</h1>
+                                    <p>(12 Trips Done) (3 Reviews Added)</p>
+                                </section>
+                            </div>
+                            <div class="ratingstars">
+                                <h4>Value for money</h4>
+                                <div class="starderet">
+                                    <img src="../Assets/starblue.svg" alt="starblue">
+                                    <img src="../Assets/starblue.svg" alt="starblue">
+                                    <img src="../Assets/starblue.svg" alt="starblue">
+                                    <img src="../Assets/starblue.svg" alt="starblue">
+                                    <img src="../Assets/stargrey.svg" alt="starblue">
+                                </div>
+                                <p>(Based on 3 Previous Reviews)</p>
+                                <h4>Driving Experience</h4>
+                                <div class="starderet">
+                                    <img src="../Assets/starblue.svg" alt="starblue">
+                                    <img src="../Assets/starblue.svg" alt="starblue">
+                                    <img src="../Assets/starblue.svg" alt="starblue">
+                                    <img src="../Assets/starblue.svg" alt="starblue">
+                                    <img src="../Assets/starblue.svg" alt="starblue">
+                                </div>
+                                <p>(Based on 3 Previous Reviews)</p>
+                                <h4>Cleanliness</h4>
+                                <div class="starderet">
+                                    <img src="../Assets/starblue.svg" alt="starblue">
+                                    <img src="../Assets/starblue.svg" alt="starblue">
+                                    <img src="../Assets/starblue.svg" alt="starblue">
+                                    <img src="../Assets/starblue.svg" alt="starblue">
+                                    <img src="../Assets/stargrey.svg" alt="starblue">
+                                </div>
+                                <p>(Based on 3 Previous Reviews)</p>
+                                <h4>Host Responsiveness</h4>
+                                <div class="starderet">
+                                    <img src="../Assets/starblue.svg" alt="starblue">
+                                    <img src="../Assets/starblue.svg" alt="starblue">
+                                    <img src="../Assets/starblue.svg" alt="starblue">
+                                    <img src="../Assets/starblue.svg" alt="starblue">
+                                    <img src="../Assets/starblue.svg" alt="starblue">
+                                </div>
+                                <p>(Based on 3 Previous Reviews)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-review">
+                        <h4>Car Reviews</h4>
+                        <div class="carreviewcard">
+                            <div class="review-describe">
+                                <h3>Recent Reviews <span class="text-biru">Very Positive</span> <span
+                                        class="text-grey-kecil">(3 Reviews)</span></h3>
+                                <h3>Overall Reviews <span class="text-biru">Very Positive</span> <span
+                                        class="text-grey-kecil">(3 Reviews)</span></h3>
+                            </div>
+                            <div class="carrousel-card">
+                                <h3>Recent Reviews</h3>
+                                <div class="geser-review">
+                                    <div class="bulat">
+                                        <img src="../Assets/arrows/vuesax/linear/vuesax/linear/arrow-left.png" alt="">
+                                    </div>
+                                    <div class="geser-card">
+                                        <div class="ruditabuti">
+                                            <img src="../Assets/ruditabuti.svg" style="width: 2em;">
+                                            <h5>Rudi Tabuti</h5>
+                                        </div>
+                                        <div class="starderet" style="margin: 0;">
+                                            <img src="../Assets/starblue.svg" alt="starblue">
+                                            <img src="../Assets/starblue.svg" alt="starblue">
+                                            <img src="../Assets/starblue.svg" alt="starblue">
+                                            <img src="../Assets/starblue.svg" alt="starblue">
+                                            <img src="../Assets/starblue.svg" alt="starblue">
+                                        </div>
+                                        <p style="margin-block: 0em; margin-top: 0.4em;">Nice car, and the host is very
+                                            friendly too,
+                                            Bravo!</p>
+                                    </div>
+                                    <div class="bulat">
+                                        <img src="../Assets/arrows/vuesax/linear/vuesax/linear/arrow-left.png" alt=""
+                                            style="transform: rotate(180deg);">
+                                    </div>
+                                </div>
+                            </div>
+                            <h4
+                                style="display: flex; flex-direction: row; justify-content: end; margin: 0.1em; color: #0066dd;">
+                                See all
+                                reviews</h4>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="privacyandpolicy">
+                <h2 style="margin-block: 0em;">Policy and Others</h2>
+                <div class="policycontainer">
+                    <p>Thank you for choosing Venture Car Rent for your car rental needs. To ensure a smooth and
+                        enjoyable rental experience, please review the following car rental policy and guidelines:
+                    </p>
+                    <p>
+                        1. Reservation and Booking:
+                        To reserve a car, you must be at least [minimum age requirement] years old and possess a valid
+                        driver's license.
+                        Reservations can be made through our website, mobile app, or by contacting...</p>
+
+                    <button style="background: none; width: 7em; border: none; color: #0066dd;"
+                        onclick="openmodal()">Read
+                        More..</button>
+
+                    <div class="modal" id="popup">
+                        <div class="modalheader">
+                            <h1>Policy And Others</h1>
+                            <button class="closebutton" onclick="closemodal()">&times;</button>
+
+                        </div>
+                        <div class="garis"></div>
+                        <p>Thank you for choosing Venture Car Rent for your car rental needs. To ensure a smooth and
+                            enjoyable rental experience, please review the following car rental policy and guidelines:
+                        </p>
+                        <div class="modalkonten">
+                            <div>
+                                <h3>1. Reservation and Booking: </h3>
+                                <ul>
+                                    <li>To reserve a car, you must be at least [minimum age requirement] years old and
+                                        possess a valid driver's license.</li>
+                                    <li>Reservations can be made through our website, mobile app, or by contacting our
+                                        customer support team.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>2. Vehicle Pickup:</h3>
+                                <ul>
+                                    <li>On the scheduled rental date, please arrive at the designated pickup location or
+                                        our rental office during operating hours.</li>
+                                    <li>Ensure you have a valid driver's license, a major credit card in your name for
+                                        security deposit, and any additional required documents.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>3. Inspection and Documentation:</h3>
+                                <ul>
+                                    <li>Before taking possession of the vehicle, a thorough inspection will be
+                                        conducted. Both you and our staff will document the condition of the vehicle,
+                                        including any existing damage.</li>
+                                    <li>It is essential to review and sign the rental agreement, acknowledging the
+                                        condition of the vehicle and the agreed-upon rental terms.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>4. Vehicle Return:</h3>
+                                <ul>
+                                    <li>Please return the vehicle on the agreed-upon date and time. Late returns may
+                                        incur additional fees.</li>
+                                    <li>Return the vehicle with the same fuel level as when it was picked up to avoid
+                                        refueling charges.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>5. Rental Extention</h3>
+                                <ul>
+                                    <li>If you need to extend your rental period, contact our customer support team in
+                                        advance to ensure availability and to update your rental agreement.</li>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="overlay"></div>
+                </div>
+            </div>
+        </div>
+        <div class="price-preview">
+            <h3>Offers & Transaction Details</h3>
+            <div class=" garis"></div>
+            <div class="promoorreset">
+                <p>Apply Promo or Discount</p>
+                <p style="color: #0066dd;">RESET</p>
+            </div>
+            <div class="promodiscbutton">
+                <button class="pddisc" onclick="opendisc()">
+                    <img src="../Assets/ticket/vuesax/linear/vuesax/linear/ticket-discount.svg" alt="">
+                    <p>Promo</p>
+                </button>
+                <button class="pddisc" onclick="opendisc()">
+                    <img src="../Assets/discount/vuesax/linear/vuesax/linear/vuesax/linear/discount-shape.svg" alt="">
+                    <p>Dicount</p>
+                </button>
+                <div class="popupdisclayout" id="popupdisc">
+                    <div class="modalheader">
+                        <h4 style="margin-block: 0  ;">Apply Promo or Discount</h4>
+                        <button onclick="closedisc()"
+                            style="font-size: 1em; background: none; border: none;">RESET</button>
+                    </div>
+                    <div class="garis"></div>
+                    <div class="searchbar">
+                        <div class="input-form"
+                            style="justify-content: space-between;  margin: 0.5em; justify-content: start;width: 90%;">
+                            <form action="">
+                                <input type="text" name="rent-date" style="width: 25em;">
+                            </form>
+                            <button id="tombol">Search</button>
+                        </div>
+                    </div>
+                    <div class="promocontainer">
+                        <h3 style="margin: 0;">Available Promo</h3>
+                        <div class="promoavailablecontainer">
+                            <h5>There are currently no available promo</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+
+                        <h3 style="margin: 0;">Available Discount</h3>
+                        <div class="promoavailablecontainer">
+                            <h5>There are currently no available discount</h5>
+                        </div>
+                    </div>
+
+                    <div class="choicedisc">
+                        <button class="canceldisc" onclick="closedisc()">Cancel any applied Promo or Discount</button>
+                        <button class="applydisc" onclick="closedisc()">Apply Selected Discount or Promo</button>
+                    </div>
+
+                </div>
+                <div id="overlaydisc"></div>
+
+
+
+            </div>
+            <p>Package offers</p>
+
+            <div class="cardpackage">
+                <h4>No Protection Package</h4>
+                <h4 style="color: black;">+ Rp0</h4>
+                <p>This package is free, but you'll face an unlimited penalty for any damage caused.</p>
+            </div>
+            <div class="cardpackage">
+                <h4>Standard Package</h4>
+                <h4 style="color: black;">+ Rp35000</h4>
+                <p>For Rp35,000, you're protected with a maximum penalty of Rp350,000 for any damage you cause.</p>
+            </div>
+            <div class="cardpackage">
+                <h4>Premium Package</h4>
+                <h4 style="color: black;">+ Rp70000</h4>
+                <p>For Rp70,000, you're protected with a maximum penalty of Rp350,000 for any damage you cause.</p>
+            </div>
+            <div class="totalrentcost">
+                <h2>Total Rental Cost</h2>
+                <div class="garis" style="margin-bottom: 0.5em;"></div>
+                <h1>Rp 200000</h1>
+                <button class="continuecheckout" onclick="pindahCheckout()">Continue</button>
+            </div>
+
+
+        </div>
+    </main>
+    <script>
+
+        function pindahCheckout() {
+            window.location.href = "../CarcheckoutPage/checkout.html";
+        }
+
+
+        function overlaymapClose() {
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

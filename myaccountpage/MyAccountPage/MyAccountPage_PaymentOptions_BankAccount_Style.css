@@ -1,0 +1,729 @@
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #D2EBFF;
+}
+
+.Navbar1 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: relative;
+}
+
+.Navbar1 ul {
+    display: flex;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    margin: 0 15px 0 15px;
+    font-family: 'Inter', sans-serif;
+    padding-left: 49px;
+    padding-right: 49px;
+}
+
+.Navbar1 a {
+    text-decoration: none;
+    white-space: nowrap;
+    color: black;
+}
+
+.Navbar1 li {
+    display: flex;
+    list-style-type: none;
+    padding-left: 4em;
+    padding-right: 3em;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.Navbar1 a:hover {
+    color: #0066DD;
+}
+
+.Container{
+    margin-top: 66px;
+    margin-bottom: 55px;
+    display: flex;
+    justify-content: center;
+}
+
+.BagianKiri {
+    background-color: #ffff;
+    width: 425px;
+    height: 1075px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 23px;
+    margin-left: 2rem;
+}
+
+.BagianKanan {
+    background-color: #ffff;
+    width: 1500px;
+    height: 1075px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 23px;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.UserPictName {
+    padding-left: 1.3em;
+    padding-top: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.TextNamaU {
+    font-size: 36px;
+    margin-left: 0.5em;
+    font-weight: 500;
+}
+
+/* User personel info */
+.UserPersonalInfo1 {
+    padding-left: 1.3em;
+    padding-top: 15px;
+    padding-right: 1.3em;
+    padding-bottom: 10px;
+}
+
+.textUPI {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+.KotakkanUPI {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.Name {
+    display: flex;
+    padding: 3%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.NameAsli {
+    margin-left: 9.5em;
+}
+
+.Email {
+    display: flex;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.EmailAsli {
+    margin-left: 4.7em;
+}
+
+.Mobile {
+    display: flex;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.MobileAsli {
+    margin-left: 6.2em;
+}
+
+
+/*Transaction History*/
+.TransactionHistory {
+    padding-left: 1.3em;
+    padding-top: 15px;
+    padding-right: 1.3em;
+    padding-bottom: 10px;
+}
+
+.textTH {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+.KotakkanTH {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+
+}
+
+.TripsDoneTH {
+    display: flex;
+    padding: 3%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.TripsDoneAsli {
+    margin-left: 12.61em;
+}
+
+.TripsReviewTH {
+    display: flex;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.TripsReviewnAsli {
+    margin-left: 11.7em;
+}
+
+.TripsComplainTH {
+    display: flex;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.TripsComplainAsli {
+    margin-left: 10.75em;
+}
+
+/*Payment Invoices*/
+.PaymentInvoices {
+    padding-left: 1.3em;
+    padding-top: 15px;
+    padding-right: 1.3em;
+    padding-bottom: 10px;
+}
+
+.textPI {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+.KotakkanPI {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+
+}
+
+.TotalExpensesPI {
+    display: flex;
+    padding: 3%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.TotalExpensesAsli {
+    margin-left: 9.35em;
+}
+
+.PaymentOptionsPI {
+    display: flex;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.PaymentOptionsAsli {
+    margin-left: 6em;
+}
+
+.InvoicesPI {
+    display: flex;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.InvoicesAsli {
+    margin-left: 9.5em;
+}
+
+/*Favourite and Wishlist*/
+.FavouriteandWishlist {
+    padding-left: 1.3em;
+    padding-top: 15px;
+    padding-right: 1.3em;
+    padding-bottom: 10px;
+}
+
+.textFW {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+.KotakkanFW {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+
+}
+
+.FavoriteCarPI {
+    display: flex;
+    padding: 3%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.FavoriteCarAsli {
+    margin-left: 8.81em;
+}
+
+.WishlistCarPI {
+    display: flex;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.WishlistCarAsli {
+    margin-left: 9em;
+}
+
+/*Need Any Help*/
+.NeedAnyHelp {
+    padding-left: 1.3em;
+    padding-top: 15px;
+    padding-right: 1.3em;
+    padding-bottom: 10px;
+}
+
+.textNAH {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+.kotakanNAH {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    height: 85px;
+}
+
+.link1,
+.link11 {
+    list-style: none;
+    padding-left: 3%;
+}
+
+.link1 a,
+.link11 a {
+    color: #0066DD;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: underline;
+    display: block;
+    padding-top: 3%;
+}
+
+/*Button logout*/
+.BUTLogout {
+    background-color: #E52828;
+    width: 385px;
+    height: 60px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+.txtLogout {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.BUTLogout:hover {
+    background-color: #C01D1D;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+.Navbarmini {
+    align-items: center;
+}
+
+.Navbarmini ul {
+    display: flex;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    border-bottom: 5px solid #AFB1B6;
+}
+
+.Navbarmini a {
+    text-decoration: none;
+    white-space: nowrap;
+    color: black;
+}
+
+.active a {
+    color: #0066DD;
+}
+
+.Navbarmini li {
+    display: flex;
+    list-style-type: none;
+    padding-right: 5em;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    padding-bottom: 0.635em;
+    padding-top: 0.635em;
+}
+
+.Navbarmini a:hover {
+    color: #0066DD;
+}
+
+.palingluarbagiankanan {
+    display: flex;
+}
+
+.palingluarkananbagiankiri {
+    width: 350px;
+    height: 821px;
+    margin-left: 2rem;
+    margin-top: 0.3rem;
+
+}
+
+.kotakanPaymentOptions {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    height: 410px;
+    border-radius: 15px;
+}
+
+.BUTbankAccount {
+    display: flex;
+    width: 322px;
+    height: 55px;
+    margin-left: 0.9rem;
+    margin-top: 137px;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #ffff;
+    color: #0066DD;
+    border: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.BUTbankAccount:hover {
+    outline: 3px solid #0066DD; 
+    color: #0066DD;
+    cursor: pointer; 
+}
+
+.Emoney {
+    display: flex;
+    width: 322px;
+    height: 55px;
+    margin-left: 0.9rem;
+    margin-top: 26px;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #ffff;
+    color: #AFB1B6;
+    border: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.Emoney:hover {
+    outline: 3px solid #0066DD; 
+    color: #0066DD;
+    cursor: pointer; 
+}
+
+.kotakEnchance {
+    width: 350px;
+    height: 273px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.enablenow {
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffff;
+    background-color: #0066DD;
+    border: none;
+    border-radius: 8px;
+    width: 240px;
+    height: 50px;
+    align-items: center;
+    margin-top: 5em;
+    margin-left: 2.4em;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+.enablenow:hover {
+    background-color: #004080;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.palingluarkananbagiankanan {
+    width: 350px;
+    height: 821px;
+    margin-left: 2rem;
+    margin-top: 0.3rem;
+
+}
+
+.kotakanconnected {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 15px;
+    width: 1020px;
+    height: 855px;
+}
+
+.kotakkanDetailKartu {
+    width: 1015px;
+    height: 77px;
+    display: flex;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.txtDetailKartu {
+    padding: 1px;
+}
+
+.BUTseedetails {
+    width: 110px;
+    height: 40px;
+    background-color: #0066DD;
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    margin-left: 41em;
+}
+.BUTseedetails:hover {
+    background-color: #004080;
+    color: #fff;
+    cursor: pointer;
+}
+
+.kotakkanBesarKonekAnotherBank {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width: 1015px;
+    height: 454px;
+    border-radius: 15px;
+    display: flex;
+}
+
+.sisiKiriKonekAnotherBank{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.sisiKananKonekAnotherBank{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-button {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    color: #AFB1B6;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 475px;
+    height: 60px;
+    background-color: #ffff;
+    font-size: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 2;
+    align-self: center;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #ffff;
+}
+
+.dropdown-item {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.kotakExpire {
+    width: 475px;
+    height: 60px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    position: relative;
+}
+
+.monthyear {
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0.8em;
+    outline: none;
+    margin-left: 0.8em;
+    color: black;
+}
+
+.monthyear::placeholder {
+    color: #AFB1B6;
+}
+
+.monthyear:focus::placeholder {
+    color: transparent; 
+}
+
+.monthyear, .monthyear::placeholder {
+    transition: color 0.3s ease-in-out;
+}
+
+.kotakOwner {
+    width: 475px;
+    height: 60px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    position: relative;
+}
+
+.owner {
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0.8em;
+    outline: none;
+    margin-left: 0.8em;
+    color: black;
+}
+
+.owner::placeholder {
+    color: #AFB1B6;
+}
+
+.owner:focus::placeholder {
+    color: transparent; 
+}
+
+.owner, .owner::placeholder {
+    transition: color 0.3s ease-in-out;
+}
+
+.kotakbankNumber {
+    width: 475px;
+    height: 60px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    position: relative;
+}
+
+.bankNumber {
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0.8em;
+    outline: none;
+    margin-left: 0.8em;
+    color: black;
+}
+
+.bankNumber::placeholder {
+    color: #AFB1B6;
+}
+
+.bankNumber:focus::placeholder {
+    color: transparent; 
+}
+
+.bankNumber, .bankNumber::placeholder {
+    transition: color 0.3s ease-in-out;
+    width: 400px;
+}
+
+.kotakccvNumber {
+    width: 475px;
+    height: 60px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    position: relative;
+}
+
+.ccvNumber {
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0.8em;
+    outline: none;
+    margin-left: 0.8em;
+    color: black;
+}
+
+.ccvNumber::placeholder {
+    color: #AFB1B6;
+}
+
+.ccvNumber:focus::placeholder {
+    color: transparent; 
+}
+
+.ccvNumber, .ccvNumber::placeholder {
+    transition: color 0.3s ease-in-out;
+}
+
+.BUTsavebank{
+    margin-top: 11em;
+    margin-left: 23em;
+    width: 110px;
+    height: 40px;
+    background-color: #0066DD;
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    outline: none;
+}
+.BUTsavebank:hover {
+    background-color: #004080;
+    color: #fff;
+    cursor: pointer;
+}

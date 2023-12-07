@@ -1,0 +1,822 @@
+main {
+    display: flex;
+    flex: row;
+    gap: 3em;
+    justify-content: space-between;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+main .car-preview {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    height: 150em;
+    margin-left: 5em;
+    width: 70%;
+    border-radius: 1em;
+    background-color: white;
+}
+
+main .price-preview {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    height: 55em;
+    width: 20em;
+    border-radius: 1em 1em 1em 1em;
+}
+
+.promoorreset {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); */
+    margin: 0.3em;
+}
+
+.promoorreset p {
+    margin-block: 0em;
+}
+
+.promodiscbutton {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding: 0.5em;
+}
+
+.pddisc {
+    padding: 0.6em;
+    margin: 0.2em;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0.5em;
+    background-color: #0066DD;
+    width: 8em;
+    border: none;
+    align-items: center;
+    justify-content: start;
+}
+
+.pddisc img {
+    height: 1.5em;
+    width: 0.5em;
+    margin: 0em;
+}
+
+.pddisc p {
+    margin-block: 0em;
+    color: white;
+}
+
+/* slider */
+
+.slider-wrapper {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 75%;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+/* cardesc */
+
+.cardesc {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+    gap: 0.5em;
+}
+
+.cardesc h1 {
+    margin-block: 0;
+    font-size: 3.2em;
+}
+
+.cardesc ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-block: 0;
+    list-style-type: none;
+    margin-inline: none;
+    padding-inline-start: 0;
+}
+
+.cardesc ul li {
+    list-style: none;
+    padding: 0;
+    background-color: #D9D9D9;
+    font-size: 1em;
+    padding: 0.5em;
+    border-radius: 1em;
+}
+
+
+.cardesc p {
+    color: #AFB1B6;
+    margin-block: 0;
+}
+
+/* garis */
+.garis {
+    width: 100%;
+    background-color: #AFB1B6;
+    height: 0.1em;
+}
+
+/* edityourrenting */
+
+.edityourrenting {
+    display: flex;
+    flex: column;
+    gap: 1em;
+    margin: 2em;
+}
+
+.edityourrenting h1 {
+    margin-block: 0;
+}
+
+.edityourrenting .input-form {
+    width: 80%;
+}
+
+.edityourrenting .input-form .location {
+    width: 10em;
+}
+
+/* carlocation */
+.carlocation {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 2em;
+}
+
+.carlocation h1 {
+    margin-block: 0em;
+}
+
+/* aboutthecar */
+
+.aboutthecar {
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 2em;
+}
+
+.aboutthecar h1 {
+    margin-block: 0em;
+    width: 100%;
+}
+
+.aboutthecar .contains {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    height: 30em;
+    width: 100%;
+    border-radius: 1em;
+}
+
+.aboutthecar .contains h2 {
+    display: flex;
+    margin: 1em;
+    width: 100%;
+    max-height: 2em;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); */
+}
+
+.aboutthecar .contains .feature {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width: 5em;
+    margin: 1em;
+    max-height: 10em;
+    border-radius: 1em;
+}
+
+
+
+.price-preview {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 0.5em;
+}
+
+.price-preview h3 {
+    margin: 1em;
+}
+
+.price-preview .bagian1 {
+    margin-left: 1em;
+    margin-right: 1em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: space-between;
+}
+
+.price-preview .satu {
+    color: #AFB1B6;
+}
+
+.price-preview .bagian2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 3em;
+    gap: 2em;
+
+}
+
+.price-preview .bagian21 {
+    width: 5em;
+    background-color: #0066dd;
+    padding: 0.3em;
+    border-radius: 1em;
+}
+
+.price-preview .bagian22 {
+    width: 5em;
+    background-color: #0066dd;
+    padding: 0.3em;
+    border-radius: 1em;
+}
+
+.price-preview img {
+    width: 18em;
+}
+
+.tombolfake {
+    background-color: #0066DD;
+    border: none;
+    color: white;
+    border-radius: 0.5em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 10em;
+    padding: 2em;
+}
+
+.cardpackage {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+    border-radius: 0.5em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    margin-bottom: 0.5em;
+}
+
+.cardpackage p {
+    margin-block: 0em;
+    color: #AFB1B6;
+}
+
+.cardpackage h4 {
+    margin-block: 0em;
+    color: #0066DD;
+}
+
+.totalrentcost {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    height: 100%;
+}
+
+.totalrentcost h2 {
+    margin-left: 4%;
+}
+
+.totalrentcost h1 {
+    margin: 4%;
+    margin-block: 0em;
+}
+
+.continuecheckout {
+    color: white;
+    background-color: #0066DD;
+    width: 92%;
+    height: 3em;
+    margin-left: 4%;
+    margin-top: 10%;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: none;
+}
+
+/* FEATURING */
+
+.container-feature {
+    display: flex;
+    flex-direction: column;
+}
+
+.fiturdanpenjelasan {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    gap: 1em;
+}
+
+.daftar-fitur {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+    flex-wrap: wrap;
+    height: 20em;
+    width: 40em;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.daftar-fitur div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+.daftar-fitur p {
+    margin-block: 0em;
+}
+
+.daftar-fitur img {
+    width: 1em;
+    margin: 0em;
+}
+
+.daftar-fitur p {
+    width: 50%;
+}
+
+.penjelasan {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.penjelasan p {
+    font-size: 1.2em;
+}
+
+/* raing dan review */
+
+.ratingdanreviewscontainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.carratings {
+    display: flex;
+    flex-direction: column;
+    width: 28em;
+}
+
+.car-review {
+    display: flex;
+    flex-direction: column;
+}
+
+.overalratings {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border-radius: 0.5em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.ratastars {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    padding: 1em;
+}
+
+.ratastars p {
+    margin-block: 0em;
+}
+
+.ratastars h1 {
+    margin-block: 0em;
+}
+
+.ratingstars {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.ratingstars h4 {
+    margin-block: 0em;
+    margin-left: 0.5em;
+}
+
+.ratingstars p {
+    margin-block: 0em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+    color: #AFB1B6;
+}
+
+.starderet {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.5em;
+}
+
+.starderet img {
+    width: 1em;
+}
+
+.carreviewcard {
+    padding: 0.5em;
+    border-radius: 0.5em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    height: 23em;
+    width: 28em;
+}
+
+.review-describe h3 {
+    margin-block: 0em;
+}
+
+.text-biru {
+    color: #0066DD;
+}
+
+.text-grey-kecil {
+    color: #AFB1B6;
+    font-size: 0.7em;
+}
+
+.geser-review {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+.geser-review .bulat {
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.geser-review {
+    padding: 1em;
+}
+
+.geser-card {
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+    height: 9em;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.ruditabuti {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+
+/* privacy and policy */
+.privacyandpolicy {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+    gap: 1em;
+}
+
+.policycontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 0.5em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding-left: 0.5em;
+}
+
+.policycontainer p {
+    margin-block: 0em;
+    margin: 0.3em;
+}
+
+/* popup */
+
+.modal {
+    background-color: white;
+    border-radius: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    width: 70%;
+    z-index: 10;
+    background-color: white;
+    /* padding: 1em; */
+}
+
+.modal.active {
+    transform: translate(-50%, -50%)scale(1);
+}
+
+.modal .closebutton {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 3em;
+}
+
+.modalheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1em;
+}
+
+.modalkonten {
+    margin: 1em;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+}
+
+#overlay.active {
+    pointer-events: all;
+    opacity: 1;
+}
+
+.mappopup {
+    background-color: black;
+    border-radius: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    width: 70%;
+    z-index: 10;
+    background-image: url(./Assets/Mapexpand.png);
+    height: 20em;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    /* padding: 1em; */
+}
+
+.shrinkbut {
+    height: 3em;
+    margin: 0.5em;
+}
+
+.mappopup.active {
+    transform: translate(-50%, -50%)scale(1);
+}
+
+.mappopup .closemap {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 3em;
+}
+
+#overlaymap {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+}
+
+#overlaymap.active {
+    pointer-events: all;
+    opacity: 1;
+}
+
+
+.popupdisc {
+    border-radius: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    width: 70%;
+    z-index: 10;
+    background-color: white;
+    height: 20em;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    /* padding: 1em; */
+}
+
+.popupdisc.active {
+    transform: translate(-50%, -50%)scale(1);
+}
+
+.popupdisc.closemap {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 3em;
+}
+
+#overlaydisc {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+}
+
+#overlaydisc.active {
+    pointer-events: all;
+    opacity: 1;
+}
+
+.popupdisc button {
+    font-size: 1em;
+    background: none;
+    border: none;
+}
+
+.disc {
+    background-color: white;
+    border-radius: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    width: 70%;
+    z-index: 10;
+    background-color: white;
+}
+
+.popupdisclayout {
+    background-color: white;
+    border-radius: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    width: 40%;
+    height: 30em;
+    z-index: 10;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* padding: 1em; */
+}
+
+.popupdisclayout.active {
+    transform: translate(-50%, -50%)scale(1);
+}
+
+.promocontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 1em;
+}
+
+.promocontainer h3 {
+    margin-block: 0;
+}
+
+.promocontainer h5 {
+    margin-block: 0;
+}
+
+.promocontainer p {
+    margin-block: 0;
+}
+
+.promoavailablecontainer {
+    border-radius: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.choicedisc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3em 1em 0em 1em;
+}
+
+.choicedisc button {
+    border: none;
+}
+
+.choicedisc .canceldisc {
+    color: #AFB1B6;
+    background: none;
+    text-decoration: underline;
+}
+
+.choicedisc .applydisc {
+    color: white;
+    background-color: #0066DD;
+    border-radius: 0.5em;
+    padding: 0.6em;
+}

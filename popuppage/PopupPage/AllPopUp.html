@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AllPopUp_Style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- SUCCESS/NO SUCCESS POPUP -->
+    <a href="#" onclick="togglePopup()">Payment</a>
+    <div class="notaccepted" id="pop-1">
+        <div class="overlay" onclick="togglePopup()"></div>
+        <div class="content">
+            <img src="./Assets/accepted.svg">
+            <h2>Payment Failed! </h2>
+            <p>It seems there was an issue with your payment. If you require assistance or have any questions, please
+                don't hesitate to contact our support team. We're here to help.</p>
+            <div class="parabutton">
+                <a href="#" onclick="togglePopup()">I’ll scroll around for a while</a>
+                <a href="#" onclick="togglePopup2()"><button>Retry the Payment</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="accepted" id="pop-2">
+        <div class="overlay" onclick="togglePopup2()"></div>
+        <div class="content">
+            <img src="./Assets/accepted.svg">
+            <h2>Payment Succesful!</h2>
+            <p>Enjoy your trip! If you need any assistance or have questions, please don't hesitate to reach out to our
+                support team. We're here to help!"</p>
+            <div class="parabutton">
+                <a href="#" onclick="togglePopup2()">I’ll scroll around for a while</a>
+                <a href=""><button>Check Your Order Here!</button></a>
+                <!-- ganti href "check your order" jadi page my transaction -->
+            </div>
+        </div>
+    </div>
+
+    <!-- MAPEXPAND -->
+    <a href="#" onclick="expand()">mapexpand</a>
+    <div class="mapexpand" id="pop-3">
+        <div class="overlay" onclick="expand()"></div>
+        <div class="content">
+            <a
+                href="https://www.google.co.id/maps/place/Jl.+Bunga+Kumis+Kucing,+Jatimulyo,+Kec.+Lowokwaru,+Kota+Malang,+Jawa+Timur+65141/@-7.95165,112.6208533,21z/data=!4m6!3m5!1s0x2dd629d81c419519:0xeccdb19f2b0b5fc3!8m2!3d-7.9516283!4d112.6209242!16s%2Fg%2F11j3tj_680?entry=ttu"><img
+                    src="./Assets/GMapsButton.svg" onclick="expand()"></a>
+            <img src="./Assets/ShrinkButton.svg" onclick="expand()">
+        </div>
+    </div>  
+
+    <!-- DISTANCE TRAVELED -->
+    <a href="#" onclick="expand2()">distancetraveled</a>
+    <div class="distancetraveled" id="pop-4">
+        <div class="overlay" onclick="expand2()"></div>
+        <div class="content">
+            <a
+                href="https://www.google.co.id/maps/place/Jl.+Bunga+Kumis+Kucing,+Jatimulyo,+Kec.+Lowokwaru,+Kota+Malang,+Jawa+Timur+65141/@-7.95165,112.6208533,21z/data=!4m6!3m5!1s0x2dd629d81c419519:0xeccdb19f2b0b5fc3!8m2!3d-7.9516283!4d112.6209242!16s%2Fg%2F11j3tj_680?entry=ttu"><img
+                    src="./Assets/GMapsButton.svg" onclick="expand()"></a>
+            <img src="./Assets/ShrinkButton.svg" onclick="expand2()">
+        </div>
+    </div>
+
+    <!--Apply Promo or Discount -->
+    <a href="#" onclick="togglePopup3()">Apply Promo or Discount</a>
+    <div class="aplypromo" id="pop-5">
+        <div class="overlay" onclick="togglePopup3()"></div>
+        <div class="content">
+            <div class="topPromo">
+                <div>Apply Promo or Discount</div>
+                <a href="">RESET</a>
+            </div>
+            <div class="line"></div>
+            <div class="kotakkanSearch">
+                <form>
+                    <img src="Assets/searchLogo.png" class="ikonSearch">
+                    <input type="text" placeholder="Have any Promo or Discount Code? Apply it here!">
+                </form>
+                <button class="butSearch">Apply</button>
+            </div>
+            <div class="available">
+                <h1>Available Promo</h1>
+                <div class="kotak">
+                    <h3>There are currently no available promo</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. </p>
+                </div>
+            </div>
+            <div class="available">
+                <h1>Available Discount</h1>
+                <div class="kotak">
+                    <h3>There are currently no available discount</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. </p>
+                </div>
+            </div>
+            <div class="parabutton2">
+                <a href="#" onclick="togglePopup3()">Cancel any applied Promo or Discount</a>
+                <a href="#" onclick="togglePopup3()"><button>Apply Selected Discount or Promo</button></a>
+                <!-- ganti href "check your order" jadi page my transaction -->
+            </div>
+        </div>
+    </div>
+
+    <!-- POLICY AND OTHER -->
+    <a href="#" onclick="toogleSeeMore()">policy and other</a>
+    <div class="policyandother" id="pop-6">
+        <div class="overlay" onclick="toogleSeeMore()"></div>
+        <div class="content">
+            <div class="paragrafAtas">Ensure you have a valid driver's license, a major credit card in your name for
+                security deposit, and any additional required documents.</div>
+
+            <div class="poinpoin">
+                <div>1. Reservation and Booking:</div>
+                <li>To reserve a car, you must be at least [minimum age requirement] years old and possess a valid
+                    driver's license.</li>
+                <li>Reservations can be made through our website, mobile app, or by contacting our customer support
+                    team.</li>
+            </div>
+
+            <div class="poinpoin">
+                <div>2. Vehicle Pickup:</div>
+                <li>On the scheduled rental date, please arrive at the designated pickup location or our rental office
+                    during operating hours.</li>
+                <li>Ensure you have a valid driver's license, a major credit card in your name for security deposit, and
+                    any additional required documents.</li>
+            </div>
+
+            <div class="poinpoin">
+                <div>3. Inspection and Documentation:</div>
+                <li>Before taking possession of the vehicle, a thorough inspection will be conducted. Both you and our
+                    staff will document the condition of the vehicle, including any existing damage.</li>
+                <li>It is essential to review and sign the rental agreement, acknowledging the condition of the vehicle
+                    and the agreed-upon rental terms.</li>
+            </div>
+
+            <div class="poinpoin">
+                <div>4. Vehicle Return:</div>
+                <li>Please return the vehicle on the agreed-upon date and time. Late returns may incur additional fees.
+                </li>
+                <li>Return the vehicle with the same fuel level as when it was picked up to avoid refueling charges.
+                </li>
+            </div>
+
+            <div class="poinpoin">
+                <div>5. Rental Extension:</div>
+                <li>If you need to extend your rental period, contact our customer support team in advance to ensure
+                    availability and to update your rental agreement.</li>
+            </div>
+
+            <div class="poinpoin">
+                <div>6. Fuel and Mileage:</div>
+                <li>You are responsible for the fuel costs during your rental period. The vehicle will be provided with
+                    a full tank.</li>
+                <li>Mileage limits and additional mileage charges are specified in your rental agreement.</li>
+            </div>
+
+            <div class="poinpoin">
+                <div>7. Maintenance and Repairs:</div>
+                <li>You must notify us immediately if the vehicle experiences any mechanical issues or requires
+                    maintenance. Do not attempt repairs yourself.</li>
+            </div>
+
+            <div class="poinpoin">
+                <div>8. Cleaning and Smoking Policy:</div>
+                <li>Return the vehicle in a clean and tidy condition. Excessive cleaning fees may apply if the vehicle
+                    is returned in an unsanitary state.</li>
+                <li>Smoking is strictly prohibited in all our vehicles. Smoking in the vehicle will result in a cleaning
+                    fee.</li>
+            </div>
+
+            <div class="poinpoin">
+                <div>9. Insurance and Liability:</div>
+                <li>All our vehicles come with a basic insurance package, but you may choose additional coverage
+                    options.</li>
+                <li>You are responsible for any damage to the vehicle, loss, or theft during the rental period.</li>
+            </div>
+
+            <div class="poinpoin">
+                <div>10. Traffic Violations and Fines:</div>
+                <li>You are responsible for any traffic violations, parking fines, and toll charges incurred during the
+                    rental period.</li>
+            </div>
+
+            <div class="poinpoin">
+                <div>11. Cancellation and Refund:</div>
+                <li>Review our cancellation policy for information on cancellations, refunds, and any associated fees.
+                </li>
+            </div>
+
+            <div class="poinpoin">
+                <div>12. Customer Support:</div>
+                <li>Our customer support team is available to assist you with any questions or concerns. Contact us via
+                    phone, email, or through our website.</li>
+            </div>
+
+            <div class="paragrafTengah">By renting a car from Venture Car Rent, you agree to abide by these terms and
+                conditions. We aim to provide a safe and enjoyable car rental experience, and your cooperation is
+                greatly appreciated. If you have any questions or require clarification on any aspect of this policy,
+                please do not hesitate to reach out to our team.</div>
+            <div class="safeTrav">Safe travels and enjoy your rental with us!</div>
+            <div class="bestReg">Best Regards Venture Car Rent.</div>
+
+            <a href="#" onclick="toogleSeeMore()">Close Page</a>
+        </div>
+    </div>
+
+    <script>
+        function togglePopup() {
+            document.getElementById("pop-1").classList.toggle("active");
+            document.getElementById("pop-2").classList.remove("active");
+        }
+
+        function togglePopup2() {
+            document.getElementById("pop-1").classList.remove("active");
+            document.getElementById("pop-2").classList.toggle("active");
+        }
+
+        function expand() {
+            document.getElementById("pop-3").classList.toggle("active");
+        }
+        function expand2() {
+            document.getElementById("pop-4").classList.toggle("active");
+        }
+
+        function togglePopup3() {
+            document.getElementById("pop-5").classList.toggle("active");
+        }
+
+        function toogleSeeMore() {
+            document.getElementById("pop-6").classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

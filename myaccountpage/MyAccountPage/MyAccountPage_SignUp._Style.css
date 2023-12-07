@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body {
+    font-family: "Inter", sans-serif;
+    background-size: cover;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-image: url(../CarsPage/Assets/BackGround.png);
+    background-position: center;
+    
+}
+
+.Navbar1 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: relative;
+}
+
+.Navbar1 ul {
+    display: flex;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    margin: 0 15px 0 15px;
+    font-family: 'Inter', sans-serif;
+    padding-left: 49px;
+    padding-right: 49px;
+}
+
+.Navbar1 a {
+    text-decoration: none;
+    white-space: nowrap;
+    color: black;
+}
+
+.Navbar1 li {
+    display: flex;
+    list-style-type: none;
+    padding-left: 4em;
+    padding-right: 3em;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.Navbar1 a:hover {
+    color: #0066DD;
+}
+
+.active a{
+    color: #0066DD;
+}
+
+.Container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.kotakkanBesar{
+    width: 1250px;
+    height: 785px;
+    display: flex;
+    border-radius: 23px;
+    margin-top: 4em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 23px;
+}
+.sebelahKiri{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    margin-top: 7.5em;
+    border-top-left-radius: 23px;
+    border-bottom-left-radius: 23px;
+    
+}
+
+.sebelahKanan{
+    background-color: white;
+    height: 785px;
+    width: 700px;
+    
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px;
+}
+
+.IsiUsername {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width: 553px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    border-radius: 9.12px;
+}
+
+.IsiUsername input {
+    outline: none;
+    border: none;
+    font-size: 28px;
+}
+
+.Username::placeholder {
+    color: #AFB1B6; 
+}
+
+.IsiPassword {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width: 553px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    border-radius: 9.12px;
+}
+
+.IsiPassword input {
+    outline: none;
+    border: none;
+    font-size: 28px;
+}
+
+.Password::placeholder {
+    color: #AFB1B6; 
+}
+
+.tombolAkunGoogle{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width: 553px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    border-radius: 9.12px;
+    background-color: white;
+    border: none;
+    color: #AFB1B6; 
+    font-size: 28px;
+    
+}
+
+.tombolAkunGoogle:hover {
+    background-color: #AFB1B6; 
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); 
+    cursor: pointer; 
+}
+
+.loggin{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width: 553px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    border-radius: 9.12px;
+    background-color: #0066DD;
+    border: none;
+    color: #fff; 
+    font-size: 28px;
+    margin-left: 2.5em;
+}
+.loggin:hover {
+    background-color: #004080; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); 
+    cursor: pointer; 
+}
+
+
+a{
+    text-decoration: none;
+    color: #0066DD;
+    text-decoration: underline;
+}
